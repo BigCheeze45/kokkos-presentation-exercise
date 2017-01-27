@@ -1,7 +1,7 @@
 KOKKOS_PATH = /usr/local/kokkos-2.02.07
-COMMON_DIR=common/
+COMMON_DIR=common
 KOKKOS_DEVICES = "OpenMP"
-EXE_NAME = "VecAdd-NaiveParallel-Vanilla"
+EXE_NAME = "VecAdd-NaiveParallel-Kokkos"
 
 SRC = $(wildcard *.cpp)
 
@@ -22,7 +22,7 @@ endif
 
 CXXFLAGS = -O3
 LINK = ${CXX}
-LINKFLAGS = -g
+LINKFLAGS =
 
 DEPFLAGS = -M
 
